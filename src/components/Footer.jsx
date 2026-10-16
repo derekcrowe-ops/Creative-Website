@@ -1,6 +1,8 @@
 import { ArrowLong } from './icons.jsx'
 import './Footer.css'
 
+const CURRENT_YEAR = new Date().getFullYear()
+
 const COLUMNS = [
   {
     title: 'Collections',
@@ -70,7 +72,7 @@ export default function Footer() {
         </form>
 
         <div className="footer__legal">
-          <p>© {new Date().getFullYear()} Ora Swiss SA · Rue du Rhône 62, Genève</p>
+          <p>© {CURRENT_YEAR} Ora Swiss SA · Rue du Rhône 62, Genève</p>
           <ul>
             <li>
               <a href="#top">Privacy</a>
