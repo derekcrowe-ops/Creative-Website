@@ -1,12 +1,12 @@
 import './Marquee.css'
 
 const WORDS = [
-  'Swiss Made',
-  'Since 1926',
-  'Genève',
-  'In-House Calibre',
-  'Certified Chronometer',
-  'Lifetime Servicing',
+  'One bag, all your gear',
+  'Sticks stay with you',
+  'Car to locker room',
+  'Made for youth hockey',
+  'Ready for team travel',
+  'Less to juggle',
 ]
 
 /* A quiet transition strip between the pinned stage and the page proper, so

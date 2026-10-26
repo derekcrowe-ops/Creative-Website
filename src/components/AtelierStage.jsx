@@ -18,9 +18,9 @@ const clamp = (v, lo, hi) => (v < lo ? lo : v > hi ? hi : v)
 const easeOut = (t) => 1 - Math.pow(1 - t, 3)
 
 const STEPS = [
-  { no: '01', name: 'Appraisal', meta: 'Movement opened, logged, photographed' },
-  { no: '02', name: 'Service', meta: 'Stripped, cleaned, re-lubricated by hand' },
-  { no: '03', name: 'Certification', meta: '72 hours on the timing bench' },
+  { no: '01', name: 'Pack', meta: 'Bring your gear together in one bag' },
+  { no: '02', name: 'Secure', meta: 'Set your sticks in the built-in holders' },
+  { no: '03', name: 'Go play', meta: 'Head from home to the rink with less to juggle' },
 ]
 
 export default function AtelierStage() {
@@ -88,7 +88,7 @@ export default function AtelierStage() {
       const scale = Math.max(cw / img.width, ch / img.height)
       const w = img.width * scale
       const h = img.height * scale
-      ctx.fillStyle = '#070604'
+      ctx.fillStyle = '#07111c'
       ctx.fillRect(0, 0, cw, ch)
       ctx.drawImage(img, (cw - w) * focusX, (ch - h) / 2, w, h)
     }
@@ -156,7 +156,7 @@ export default function AtelierStage() {
       id="atelier"
       ref={stageRef}
       style={{ height: CHAPTERS * CHAPTER_VH + 'vh' }}
-      aria-label="Inside the atelier"
+      aria-label="The RinkKit idea"
     >
       <div className="atelier__pin">
         <canvas className="atelier__canvas" ref={canvasRef} aria-hidden="true" />
@@ -165,13 +165,13 @@ export default function AtelierStage() {
         <article className="a-chapter a-chapter--creed" ref={setChapter(0)}>
           <div className="a-chapter__inner">
             <h2 className="atelier__title">
-              <span>Precision is</span>
-              <span>not a feature.</span>
-              <span>It is our</span>
-              <span>foundation.</span>
+              <span>Rink days</span>
+              <span>start before</span>
+              <span>you hit the</span>
+              <span>ice.</span>
             </h2>
             <a className="ghost-btn atelier__cta" href="#collection">
-              <span>Discover more</span>
+              <span>Explore the bag</span>
               <ArrowLong className="ghost-btn__arrow" />
             </a>
           </div>
@@ -180,10 +180,10 @@ export default function AtelierStage() {
         {/* ----------------------------- 02 - THE BENCH ------------------ */}
         <article className="a-chapter a-chapter--bench" ref={setChapter(1)}>
           <div className="a-chapter__inner">
-            <p className="eyebrow">The Atelier — Genève</p>
+            <p className="eyebrow">A simpler rink routine</p>
             <h2 className="atelier__title atelier__title--sm">
-              <span>Every piece passes</span>
-              <span>through these hands.</span>
+              <span>Keep gear and sticks</span>
+              <span>together on the go.</span>
             </h2>
             <ol className="bench-list">
               {STEPS.map((step) => (
@@ -206,3 +206,4 @@ export default function AtelierStage() {
     </section>
   )
 }
+

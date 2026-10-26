@@ -241,3 +241,5 @@ h3 {
     transition-duration: 0.001ms !important;
   }
 }
+
+:root { --ink-000: #07111c; --ink-050: #0a1925; --ink-100: #102333; --ink-200: #173144; --ground: #07111c; --field: #1c3949; --dial: #294c60; --lume: #c63732; }

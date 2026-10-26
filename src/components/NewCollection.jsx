@@ -1,64 +1,17 @@
 import { ArrowLong } from './icons.jsx'
 import './NewCollection.css'
 
-/* Reference screenshot four: the page inverts to paper here. A full-bleed
-   watch fills the left, and the paper panel curves into it with a large
-   half-ellipse rather than a straight edge. */
 export default function NewCollection() {
-  return (
-    <section className="collection" id="collection">
-      <div className="collection__media" data-reveal>
-        <img
-          src={import.meta.env.BASE_URL + "stills/collection-main.webp"}
-          alt="A dive calibre shown open, with the movement exposed"
-          loading="lazy"
-        />
+  return <section className="collection" id="collection">
+    <div className="collection__media" data-reveal><img src={import.meta.env.BASE_URL + 'products/03.svg'} alt="Illustration of hockey gear bag and sticks ready for rink travel" loading="lazy" /></div>
+    <div className="collection__body"><div className="collection__inner">
+      <h2 className="collection__title" data-reveal>The One-Carry Hockey Bag</h2>
+      <blockquote className="collection__note" data-reveal style={{ '--i': 1 }}><p>Our venture idea is simple: a hockey gear bag with integrated stick holders. Keep the things you need for the rink together, and make team travel a little less chaotic.</p></blockquote>
+      <div className="collection__cards">
+        <figure data-reveal style={{ '--i': 2 }}><img src={import.meta.env.BASE_URL + 'products/01.svg'} alt="Concept illustration highlighting integrated stick holders" loading="lazy" /><figcaption>Integrated stick holders</figcaption></figure>
+        <figure data-reveal style={{ '--i': 3 }}><img src={import.meta.env.BASE_URL + 'products/04.svg'} alt="Concept illustration of a player carrying gear to the rink" loading="lazy" /><figcaption>Made for rink-day routines</figcaption></figure>
       </div>
-
-      <div className="collection__body">
-        <div className="collection__inner">
-          <h2 className="collection__title" data-reveal>
-            New Collection
-          </h2>
-
-          <blockquote className="collection__note" data-reveal style={{ '--i': 1 }}>
-            <p>
-              A wide assortment of dive and dress references to suit any wrist.
-              Discover the full selection across every maison we carry, and find the
-              combination of style and function that belongs to you.
-            </p>
-          </blockquote>
-
-          <div className="collection__cards">
-            <figure data-reveal style={{ '--i': 2 }}>
-              <img
-                src={import.meta.env.BASE_URL + "stills/collection-a.webp"}
-                alt="Bezel and dial assembly held in the light"
-                loading="lazy"
-              />
-              <figcaption>The Bezel — 60-click ceramic</figcaption>
-            </figure>
-            <figure data-reveal style={{ '--i': 3 }}>
-              <img
-                src={import.meta.env.BASE_URL + "stills/collection-b.webp"}
-                alt="The movement resting on its case back"
-                loading="lazy"
-              />
-              <figcaption>The Movement — V-240 automatic</figcaption>
-            </figure>
-          </div>
-
-          <a
-            className="ghost-btn collection__cta"
-            href="#maisons"
-            data-reveal
-            style={{ '--i': 4 }}
-          >
-            <span>Discover the Range</span>
-            <ArrowLong className="ghost-btn__arrow" />
-          </a>
-        </div>
-      </div>
-    </section>
-  )
+      <a className="ghost-btn collection__cta" href="mailto:hello@rinkkit.example?subject=RinkKit%20interest" data-reveal style={{ '--i': 4 }}><span>Tell us what you think</span><ArrowLong className="ghost-btn__arrow" /></a>
+    </div></div>
+  </section>
 }

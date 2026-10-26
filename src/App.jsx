@@ -11,6 +11,7 @@ import Assurances from './components/Assurances.jsx'
 import NewCollection from './components/NewCollection.jsx'
 import AtelierStage from './components/AtelierStage.jsx'
 import Footer from './components/Footer.jsx'
+import './styles/rinkkit.css'
 
 export default function App() {
   const { framesRef, progress, ready } = useFrameSequence()

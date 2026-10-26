@@ -34,8 +34,8 @@ export default function Preloader({ progress, ready, onDone }) {
       aria-live="polite"
     >
       <div className="preloader__brand">
-        <span className="preloader__mark">Ora Swiss</span>
-        <span className="preloader__city">Geneva</span>
+        <span className="preloader__mark">RinkKit</span>
+        <span className="preloader__city">Hockey carry, rethought</span>
       </div>
 
       <div className="preloader__meter">
@@ -51,7 +51,7 @@ export default function Preloader({ progress, ready, onDone }) {
       </div>
 
       <p className="preloader__note eyebrow">
-        Preparing 240 frames of the calibre
+        Getting your next rink day in view
       </p>
     </div>
   )

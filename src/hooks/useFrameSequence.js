@@ -13,23 +13,23 @@ import { useEffect, useRef, useState } from 'react'
  * first.
  */
 
-export const FPS = 24
+export const FPS = 1
 
 /* the hero clip: 240 frames at 24fps (10.005s), four 60-frame / 2.5s chapters */
-export const TOTAL_FRAMES = 240
-export const CHAPTER_FRAMES = 60
+export const TOTAL_FRAMES = 4
+export const CHAPTER_FRAMES = 1
 
 /* the atelier clip: the same 10.005s sampled at 12fps, since it is a slow
    push-in and scrubbing is driven by scroll position rather than time - two
    60-frame / 5s chapters */
-export const ATELIER_FRAMES = 120
-export const ATELIER_CHAPTER_FRAMES = 60
+export const ATELIER_FRAMES = 2
+export const ATELIER_CHAPTER_FRAMES = 1
 
 const COARSE_STRIDE = 6
 const POOL_SIZE = 12
 
 export const frameUrl = (i, dir = 'frames') =>
-  `${import.meta.env.BASE_URL}${dir}/frame_${String(i).padStart(4, '0')}.webp`
+  `${import.meta.env.BASE_URL}${dir}/frame_${String(i).padStart(4, '0')}.svg`
 
 function loadImage(src) {
   return new Promise((resolve) => {

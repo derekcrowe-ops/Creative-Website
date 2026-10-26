@@ -3,11 +3,11 @@ import { Menu, Close, Search, Bag } from './icons.jsx'
 import './Navbar.css'
 
 const LINKS = [
-  { label: 'The Calibre', href: '#maisons' },
-  { label: 'Maisons', href: '#maisons' },
-  { label: 'New Collection', href: '#collection' },
-  { label: 'Services', href: '#assurances' },
-  { label: 'Geneva Salon', href: '#footer' },
+  { label: 'The idea', href: '#featured' },
+  { label: 'Why RinkKit', href: '#maisons' },
+  { label: 'The bag', href: '#collection' },
+  { label: 'Who it’s for', href: '#assurances' },
+  { label: 'Get in touch', href: '#footer' },
 ]
 
 export default function Navbar() {
@@ -48,20 +48,17 @@ export default function Navbar() {
         </button>
 
         <a className="nav__brand" href="#top">
-          <span className="nav__mark">Ora Swiss</span>
-          <span className="nav__city">Geneva</span>
+          <span className="nav__mark">RinkKit</span>
+          <span className="nav__city">Hockey carry, rethought</span>
         </a>
 
         <div className="nav__actions">
-          <button className="nav__icon" aria-label="Search">
+          <a className="nav__icon" aria-label="Explore the bag" href="#collection">
             <Search className="nav__glyph" />
-          </button>
-          <button className="nav__icon" aria-label="Shopping bag">
+          </a>
+          <a className="nav__icon" aria-label="Get in touch" href="mailto:derek.crowe@student.fairfield.edu?subject=RinkKit%20interest">
             <Bag className="nav__glyph" />
-            <span className="nav__count" aria-hidden="true">
-              0
-            </span>
-          </button>
+          </a>
         </div>
       </header>
 
@@ -96,8 +93,8 @@ export default function Navbar() {
         </nav>
 
         <footer className="menu__foot">
-          <p className="eyebrow">Rue du Rhône 62, 1204 Genève</p>
-          <p className="eyebrow">+41 22 000 00 00</p>
+          <p className="eyebrow">One bag. Sticks included.</p>
+          <p className="eyebrow">A youth hockey venture concept</p>
         </footer>
       </div>
     </>

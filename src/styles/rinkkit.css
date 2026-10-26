@@ -1,0 +1,29 @@
+:root {
+  --ink-000: #07111c;
+  --ink-050: #0a1925;
+  --ink-100: #102333;
+  --ink-200: #173144;
+  --ground: #07111c;
+  --field: #1c3949;
+  --dial: #294c60;
+  --lume: #c63732;
+}
+
+.featured { height: auto !important; }
+.featured__pin { position: relative; height: auto; min-height: 100svh; overflow: visible; padding-block: clamp(4rem, 9vh, 6rem) clamp(2rem, 5vh, 3.5rem); }
+.featured__wash { display: none; }
+.featured__viewport { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+.featured__track { transform: none !important; }
+.p-card { scroll-snap-align: start; }
+.maisons__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.collection__media img, .collection__cards img { object-position: center; }
+.nav__city, .preloader__city { letter-spacing: .28em; }
+
+@media (max-width: 760px) {
+  .maisons__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero__title { white-space: normal; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured__viewport { scroll-behavior: auto; }
+}
