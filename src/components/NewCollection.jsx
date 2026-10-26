@@ -11,7 +11,7 @@ export default function NewCollection() {
         <figure data-reveal style={{ '--i': 2 }}><img src={import.meta.env.BASE_URL + 'products/01.svg'} alt="Concept illustration highlighting integrated stick holders" loading="lazy" /><figcaption>Integrated stick holders</figcaption></figure>
         <figure data-reveal style={{ '--i': 3 }}><img src={import.meta.env.BASE_URL + 'products/04.svg'} alt="Concept illustration of a player carrying gear to the rink" loading="lazy" /><figcaption>Made for rink-day routines</figcaption></figure>
       </div>
-      <a className="ghost-btn collection__cta" href="mailto:hello@rinkkit.example?subject=RinkKit%20interest" data-reveal style={{ '--i': 4 }}><span>Tell us what you think</span><ArrowLong className="ghost-btn__arrow" /></a>
+      <a className="ghost-btn collection__cta" href="mailto:derek.crowe@student.fairfield.edu?subject=RinkKit%20interest" data-reveal style={{ '--i': 4 }}><span>Tell us what you think</span><ArrowLong className="ghost-btn__arrow" /></a>
     </div></div>
   </section>
 }
